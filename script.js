@@ -5,8 +5,10 @@ $("#submit").click(function () {
     url: `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${nmCity}?key=WAJVBFE8WPRUYZQ9KTFCEDE8K`,
     type: "GET",
     success: function (dado) {
-      $(".city").text(dado.address);
+      console.log(dado)
+      $(".city").text(dado.resolvedAddress);
       $(".temp").text((dado.days[0].temp) + ' ºF');
+      $('.precProb').text('Probabilidade de preicitação: ' + dado.days[0].precipprob + '%');
       $(".wind").text('Velocidade do vento: '+ dado.days[0].windspeed + ' km/h');
 
       switch(icon){
