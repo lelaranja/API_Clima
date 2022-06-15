@@ -39,22 +39,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  justify-self: flex-end;
   align-items: flex-end;
   font-family: "Krub", sans-serif;
   font-size: 0.8em;
   color: black;
-  margin-top: 0.8em;
   margin-bottom: 0.2em;
   position: absolute;
   bottom: 0;
-}
-
-.txtFooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .gitHub {
