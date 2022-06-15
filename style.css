@@ -16,3 +16,7 @@ body{
 }
 
 /* font-family: 'Krub', sans-serif; */
+
+#imagem{
+    display: none;
+}

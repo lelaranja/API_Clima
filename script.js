@@ -6,11 +6,16 @@ $("#submit").click(function () {
     type: "GET",
     success: function (dado) {
       console.log(dado)
-      $(".city").text(dado.name + ',' + dado.region);
-      $(".temp").text(dado.current[0].temp_c+ ' ºC');
-      $(".icon").attr(dado.icon)
-      $('.precProb').text('Precipitação prevista: ' + dado.precip_mm + 'mm');
-      $(".wind").text('Velocidade do vento: '+ dado.wind_kph + ' km/h');
+      $(".city").text(dado.location.name);
+      $(".temp").text(dado.current.temp_c+ ' ºC');
+      $('.icon').css({
+        'display': 'flex',
+        'justify-content': 'center',
+        'align-items': 'center'
+    });
+      $(".icon").attr('src', dado.current.condition.icon);
+      $('.precProb').text('Precipitação prevista: ' + dado.current.precip_mm + ' mm');
+      $(".wind").text('Velocidade do vento: '+ dado.current.wind_kph + ' km/h');
     },
     error: function (error) {
       console.log(error);
