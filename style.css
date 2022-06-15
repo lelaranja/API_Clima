@@ -29,10 +29,29 @@ main {
   max-width: 420px;
   margin: 1em;
 }
+
 #imagem {
   display: none;
 }
 
+input[type="submit"] {
+  font-size: 1em;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: inline-block;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 /* FOOTER */
 footer {
   height: 30%;
