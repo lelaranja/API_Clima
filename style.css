@@ -46,6 +46,13 @@ main {
   margin-right: 1em;
 }
 
+.obsNote {
+  font-size: small;
+  justify-content: flex-start;
+  color: #76b5bf;
+  font-weight: 500;
+}
+
 h1 {
   font-weight: 700;
   font-size: 3em;

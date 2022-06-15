@@ -18,6 +18,7 @@ $("#submit").click(function () {
       $(".wind").text(
         "Velocidade do vento: " + dado.current.wind_kph + " km/h"
       );
+      $(".obsNote").css("display", "none");
     },
     error: function (error) {
       console.log(error);
