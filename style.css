@@ -34,6 +34,18 @@ main {
   display: none;
 }
 
+.digitCity {
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  border-radius: 10px;
+  color: wheat;
+  background-color: #212121;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 1em;
+}
+
 input[type="submit"] {
   font-size: 1em;
   background: royalblue;
