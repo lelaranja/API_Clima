@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="./img/img_readme.PNG" width="500" title="imagem site">
+</p>
+
 <h1 align="center">API Clima</h1>
 Projeto de requisição de API de clima.
 
